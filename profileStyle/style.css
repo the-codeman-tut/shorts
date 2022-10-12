@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 50vw;
+    height: 10vh;;
+    margin: auto;
+    padding-top: 5rem;
+    background-color: #DFDFDD;
+}
+
+/* 
+#00A884;
+*/
+.circleframe{
+    width:10rem;
+    height: 10rem;
+    border: 5px solid #00A884;
+    border-radius:50%;
+}
+.squareframe{
+    width:10rem;
+    height: 10rem;
+    border: 5px solid #00A884;
+    border-radius: 20px; 
+}
