@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 50vw;
+    height: 10vh;;
+    margin: auto;
+    padding-top: 5rem;
+}
+
+/* 
+
+primary - #0069D9
+secondary - #5A6268
+success - #218838
+danger - #C82333
+warning - #E0A800
+info - #138496
+*/
+
+.primary{
+    background-color: #0069D9;
+}
+.secondary{
+    background-color: #5A6268;
+}
+.success{
+    background-color: #218838;
+}
+.danger{
+    background-color: #C82333;
+}
+.warning{
+    background-color: #E0A800;
+}
+.info{
+    background-color: #138496;
+}
+
+.basic-btn{
+    width: 8rem;
+    padding: .8rem .5rem;
+    border-radius: 50px;
+    border: none;
+    font-weight:900;
+    cursor: pointer;
+    color: #fff;
+}
