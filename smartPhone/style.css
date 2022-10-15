@@ -1,0 +1,59 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    display: flex;
+    justify-content: center;
+    align-self: center;
+
+    font-family: 'Saira', sans-serif;
+}
+
+.container{
+    width: 300px;
+    height: 650px;
+    border: 8px solid rgb(0, 0, 0);
+    margin: auto;
+    border-radius: 25px;
+    background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+}
+
+.innerPanel{
+    width: 98%;
+    height: 99%;
+    border: 4px solid rgb(160, 151, 151);
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camera{
+    width: 8px;
+    height: 8px;
+    border: 2px solid;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.dateTime{
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.dateTime h3{
+    font-size: 60px;
+    line-height: 0rem;
+    font-weight: 100;
+}
+
+.dateTime p{
+    margin-top: -2rem;
+}
+
