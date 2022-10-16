@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'digital';
+    src: URL('./asset/digital.ttf') format('truetype');
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: #DFDFDF;
+
+    font-family: 'digital', sans-serif;
+}
+
+.container{
+    width: 450px;
+    border: 18px solid #06A8E4;
+    margin: auto;
+    border-radius: 35px;
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    font-size: 4.2rem;
+    color: #06A8E4
+}
