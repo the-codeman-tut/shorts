@@ -1,0 +1,42 @@
+body {
+    padding: 0rem;
+    margin: 0rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: grey;
+}
+
+.spinner {
+    width: 150px;
+    height: 150px;
+    margin: 2rem;
+    border-radius: 50%
+}
+
+.transparentStyle {
+    border: 30px solid transparent;
+    border-bottom-color: #FAD610;
+    animation: spinner 1s linear infinite;
+}
+
+.borderStyle {
+    border: 30px solid #fff;
+    border-top-color: #FAD610;
+    animation: spinner 2s alternate infinite;
+}
+
+.double {
+    border: 30px solid #fff;
+    border-left-color: #FAD610;
+    border-right-color: #FAD610;
+    animation: spinner 2s ease infinite;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(1turn);
+    }
+}
