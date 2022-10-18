@@ -1,9 +1,9 @@
-function myfunction(){
+function myfnction(){
     var role = "student";
     let age = 12;
     const username = "The code man";
-    console.log(role)
+    age = 24
+    console.log(role);
 }
 
-
-myfunction();
+myfnction();
