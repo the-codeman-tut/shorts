@@ -1,0 +1,53 @@
+body{
+    padding: 0rem;
+    margin: 0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #222;
+}
+
+div{
+    width:60px;
+    height: 250px;
+    background-color: #E50914;
+
+    position: relative;
+}
+
+div::before{
+    width:60px;
+    height: 250px;
+    background-color: #E50914;
+
+    content: '';
+    position: absolute;
+    left: 90;
+}
+
+div::after{
+    width:160px;
+    height: 50px;
+    background-color: #222;
+
+    border-radius: 50%;
+
+    content: '';
+    position: absolute;
+    left: -2;
+    bottom: -30;
+}
+
+span{
+    width:60px;
+    height: 250px;
+    background-color: #e50913;
+    box-shadow: 0 0 50px #222;
+
+    position: absolute;
+    left: 46px;
+
+    transform: skew(20deg);
+}
