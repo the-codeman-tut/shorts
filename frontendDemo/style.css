@@ -1,0 +1,21 @@
+body{
+    margin: 0rem;
+    padding:0rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(197, 195, 195); */
+}
+
+.primary-btn{
+    padding:1rem;
+    border-radius: 50px;
+    background-color: #fad610;
+    color: #fff;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
