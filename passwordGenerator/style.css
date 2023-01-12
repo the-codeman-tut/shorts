@@ -16,8 +16,8 @@ body{
     border: 5px solid #999999;;
     border-radius: 25px;
     background-color: #FFFFFF;
-    /* width: 25%;
-    height: 70%; */
+    width: 40%;
+    /* height: 70%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,18 +28,19 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
 }
 
 #password{
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     border-radius: 25px;
     border: none;
     background-color: #F2F2F2;
     font-family: 'Saira', sans-serif;
-    font-weight: 400;
-    /* letter-spacing: .5rem; */
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: .5rem;
     text-align: center;
 }
 
@@ -69,8 +70,8 @@ body{
 }
 
 h3{
-    color: #999999;
-    /* font-size: 1.8rem; */
+    color: #579BB1;
+    font-size: 1.8rem;
 }
 
 #hint{
@@ -78,11 +79,25 @@ h3{
     text-align: center;
 }
 
-@media only screen and (max-width: 480px) { 
+@media all and (max-width: 480px) { 
     .container{
         width: 100%;
         height: 100%;
         border: none;
         border-radius: 0;
+        background-color: #E1D7C6;
+    }
+
+    .button-style{
+        border-radius: 5px;
+    }
+
+    #password{
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .buttonContainer{
+        width: 100%;
     }
  }
