@@ -13,6 +13,9 @@ function copyText() {
     let copyText = document.getElementById("password");
     let hintText = document.getElementById("hint");
 
+    copyText.select();// select the input field
+    copyText.setSelectionRange(0,99999);// For mobile devices
+    document.execCommand("copy");
     hintText.innerText = "copied"
     navigator.clipboard.writeText(copyText.value);
 }
