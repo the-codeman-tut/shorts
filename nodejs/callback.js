@@ -8,6 +8,10 @@ function one() {
     console.log("one");
 }
 
+// function two() {
+//     console.log("two");
+// }
+
 function two(mycallback) {
     console.log("two");
 
@@ -19,5 +23,6 @@ function three() {
 }
 
 one();
-setTimeout(two, 1000, three);
+// two();
+setTimeout(two, 1000,three);
 three();
