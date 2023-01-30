@@ -36,7 +36,7 @@ div::after{
 
     content: '';
     position: absolute;
-    left: -2;
+    left: -5;
     bottom: -30;
 }
 
