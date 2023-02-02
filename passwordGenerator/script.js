@@ -20,6 +20,11 @@ function copyText() {
     navigator.clipboard.writeText(copyText.value);
 }
 
+function clearPassword() {
+    let input = document.getElementById("password");
+    input.value = "";
+}
+
 function generateRandomPassword() {
     let upperCases = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     let loweCases = 'abcdefghijklmnopqrstuvwxyz';
