@@ -30,11 +30,11 @@ body{
 .buttonContainer{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 
 #password{
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     border-radius: 25px;
     border: none;

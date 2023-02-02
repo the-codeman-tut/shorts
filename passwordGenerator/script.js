@@ -22,7 +22,9 @@ function copyText() {
 
 function clearPassword() {
     let input = document.getElementById("password");
+    let hintText = document.getElementById("hint");
     input.value = "";
+    hintText.innerText = ""
 }
 
 function generateRandomPassword() {
