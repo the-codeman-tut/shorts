@@ -15,17 +15,19 @@
 <body>
     <div class="container">
 
-        <h3>Password Generator</h3>
+        <img class="profile" src="asset/logo.png"/>
+
+        <h3>Make Password</h3>
 
         <input type="text" id="password" placeholder="password" />
+
+        <p id="hint"></p>
 
         <div class="buttonContainer">
 
             <button class="button-style primary" onclick="generatePassword()">Generate</button>
             
             <button class="button-style success" onclick="copyText()" id="copyBtn">Copy</button>
-
-            <p id="hint"></p>
 
         </div>
         
