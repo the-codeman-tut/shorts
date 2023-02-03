@@ -6,49 +6,56 @@ function generatePassword() {
 
     let hintText = document.getElementById("hint");
 
-    hintText.innerText = ""
+    // hintText.innerText = ""
 }
 
 function copyText() {
     let copyText = document.getElementById("password");
     let hintText = document.getElementById("hint");
 
-    copyText.select();// select the input field
-    copyText.setSelectionRange(0,99999);// For mobile devices
-    document.execCommand("copy");
-    hintText.innerText = "copied"
-    navigator.clipboard.writeText(copyText.value);
+    if (copyText.value === "") {
+        let element = document.getElementById("errorCheck");
+        element.classList.add("error");
+        setTimeout(() => {
+            element.classList.remove("error");
+        }, 1000);
+    } else {
+        copyText.select();// select the input field
+        copyText.setSelectionRange(0,99999);// For mobile devices
+        document.execCommand("copy");
+        hintText.innerText = "copied"
+        navigator.clipboard.writeText(copyText.value);
+    
+        setTimeout(() => {
+            let hintText = document.getElementById("hint");
+            hintText.innerHTML = "&nbsp;"
+        }, 1000);
+    }
+
+
 }
 
 function clearPassword() {
     let input = document.getElementById("password");
     let hintText = document.getElementById("hint");
     input.value = "";
-    hintText.innerText = ""
+    hintText.innerHTML = "&nbsp;"
 }
 
+function addZero(i) {
+    if (i < 10) {i = "0" + i}
+    return i;
+  }
+
 function generateRandomPassword() {
-    let upperCases = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let loweCases = 'abcdefghijklmnopqrstuvwxyz';
     let specialCharacters = '!@#$%^&*';
-    let numbers = '1234567890';
 
-    let i = 0;
-    let password = '';
-
-    while (i < 2) {
-        let upperCase = upperCases.split('')[Math.floor(Math.random() * upperCases.length)];
-
-        let lowercase = loweCases.split('')[Math.floor(Math.random() * loweCases.length)];
-
-        let specialCharacter = specialCharacters.split('')[Math.floor(Math.random() * specialCharacters.length)];
-
-        let number = numbers.split('')[Math.floor(Math.random() * numbers.length)];
-
-        password += `${upperCase}${lowercase}${specialCharacter}${number}`;
-
-        i++;
-    }
-
+    const date = new Date();
+    
+    const month = date.toLocaleString('default', { month: 'short' });
+    const day = date.toJSON().slice(0, 10).split("-")[1];
+    const specialCharacter = specialCharacters.split('')[Math.floor(Math.random() * specialCharacters.length)];
+    const seconds = date.getSeconds();
+    const password = `${month}${day}${specialCharacter}${addZero(seconds)}`;
     return password;
 }

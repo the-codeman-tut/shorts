@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800&display=swap" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="style/desktop.css" rel="stylesheet">
+    <link href="style/mobile.css" rel="stylesheet">
 </head>
 
 <body>
@@ -18,18 +19,13 @@
 
         <h3>Make Password</h3>
 
-        <input type="text" id="password" placeholder="password" />
-
-        <p id="hint"></p>
-
-        <div class="buttonContainer">
-
-            <button class="button-style primary" onclick="generatePassword()">Generate</button>
-            
-            <button class="button-style success" onclick="copyText()" id="copyBtn">Copy</button>
-
+        <div class="passwordContainer" id="errorCheck">
+            <input type="text" id="password" placeholder=" " />
+            <img src="asset/copy.png" onclick="copyText()" />
         </div>
 
+        <button class="button-style primary" onclick="generatePassword()">Generate</button>
+        <p id="hint">&nbsp;</p>
         <div class="closeContainer">
             <button class="close" onclick="clearPassword()">&#x2715</button>
         </div>
