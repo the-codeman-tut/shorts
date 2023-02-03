@@ -1,12 +1,9 @@
+
 function generatePassword() {
     let generatedPassword = generateRandomPassword();
 
     let input = document.getElementById("password");
     input.value = generatedPassword;
-
-    let hintText = document.getElementById("hint");
-
-    // hintText.innerText = ""
 }
 
 function copyText() {
